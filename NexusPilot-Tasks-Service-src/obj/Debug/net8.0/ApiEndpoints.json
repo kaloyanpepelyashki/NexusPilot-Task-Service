@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.CreationController",
+    "Method": "CreateTask",
+    "RelativePath": "api/Creation/newTask",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskObject",
+        "Type": "NexusPilot_Tasks_Service_src.Controllers.CreationController\u002BTaskCreationObject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

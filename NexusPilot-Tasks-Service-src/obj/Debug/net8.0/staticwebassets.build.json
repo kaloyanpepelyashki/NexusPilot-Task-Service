@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FBTkwahNri0oo4nQ9FdtoXpW9+3VvFzxxakMkDtRAeA=",
+  "Source": "NexusPilot-Tasks-Service-src",
+  "BasePath": "_content/NexusPilot-Tasks-Service-src",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

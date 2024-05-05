@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NexusPilot-Tasks-Service-src", "NexusPilot-Tasks-Service-src.csproj", "{20895F7C-285A-41CE-9BBE-50BF1356CB61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20895F7C-285A-41CE-9BBE-50BF1356CB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20895F7C-285A-41CE-9BBE-50BF1356CB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20895F7C-285A-41CE-9BBE-50BF1356CB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20895F7C-285A-41CE-9BBE-50BF1356CB61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E01A9C1B-604A-42BE-97F2-0386C22FD18A}
+	EndGlobalSection
+EndGlobal
