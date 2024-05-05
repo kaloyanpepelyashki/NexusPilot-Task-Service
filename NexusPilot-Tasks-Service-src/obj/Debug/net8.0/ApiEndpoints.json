@@ -14,5 +14,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.RetrievalController",
+    "Method": "GetAllProjectTasks",
+    "RelativePath": "api/Retrieval/allProjectTasks",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectUUID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

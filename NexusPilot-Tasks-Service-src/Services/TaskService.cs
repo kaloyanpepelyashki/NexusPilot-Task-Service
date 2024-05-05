@@ -51,5 +51,40 @@ namespace NexusPilot_Tasks_Service_src.Services
                 throw new Exception($"{e}");
             }
         }
+
+        public async Task<(bool isSuccess, List<TaskItem> tasksList)> GetAllTasksForProject(string projectUUID)
+        {
+            try
+            {
+                var projectGuid = new Guid(projectUUID);
+
+                var result = await supabase.From<TaskItem>().Where(item => item.ProjectId == projectGuid).Get();
+
+                if(result != null)
+                {
+                    List<TaskItem> returnedTasks = new List<TaskItem>();
+
+                    result.Models.ForEach(task =>
+                    {
+                        returnedTasks.Add(new TaskItem { Id = task.Id, Summary = task.Summary, Description = task.Description, ImageUrl = task.ImageUrl, Pirority = task.Pirority, ProjectId = projectGuid, TaskOwnerId = task.TaskOwnerId });
+                    });
+
+                    if(returnedTasks.Count > 0)
+                    {
+                        return (true, returnedTasks);
+                    }
+
+                    return (true, new List<TaskItem>());
+                }
+
+                return (false, new List<TaskItem>());
+
+                
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+        }
     }
 }

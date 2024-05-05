@@ -121,3 +121,4 @@ C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Mana
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\obj\Debug\net8.0\NexusPilot-Tasks-Service-src.pdb
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\obj\Debug\net8.0\NexusPilot-Tasks-Service-src.genruntimeconfig.cache
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\obj\Debug\net8.0\ref\NexusPilot-Tasks-Service-src.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\obj\Debug\net8.0\NexusPilot-Tasks-Service-src.sourcelink.json
