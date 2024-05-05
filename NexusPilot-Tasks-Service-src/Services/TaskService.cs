@@ -58,7 +58,7 @@ namespace NexusPilot_Tasks_Service_src.Services
             {
                 var projectGuid = new Guid(projectUUID);
 
-                var result = await supabase.From<TaskItem>().Where(item => item.ProjectId == projectGuid).Get();
+                var result = await supabase.From<TaskItem>().Where(task => task.ProjectId == projectGuid).Get();
 
                 if(result != null)
                 {
@@ -83,6 +83,25 @@ namespace NexusPilot_Tasks_Service_src.Services
             }
             catch (Exception e)
             {
+                throw;
+            }
+        }
+
+        //To do: Implement some validation of completion and error handling
+        public async Task<bool> DeleteTask(string taskId)
+        {
+            try
+            {
+                
+
+                var result = supabase.From<TaskItem>().Where(task => task.Id == taskId).Delete();
+
+                Console.WriteLine($"Result: {result}");
+                return true;
+
+            } catch(Exception e)
+            {
+                Console.WriteLine($"Error deleting task: {e}");
                 throw;
             }
         }

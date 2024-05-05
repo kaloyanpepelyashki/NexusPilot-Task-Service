@@ -16,6 +16,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.DeletionController",
+    "Method": "DeleteTaskById",
+    "RelativePath": "api/Deletion/taskByTaskId",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.RetrievalController",
     "Method": "GetAllProjectTasks",
     "RelativePath": "api/Retrieval/allProjectTasks",
