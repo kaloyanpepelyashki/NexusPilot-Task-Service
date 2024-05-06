@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.CreationController",
+    "Method": "AddAssigneesToTask",
+    "RelativePath": "api/Creation/addAssignee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addAssigneeObject",
+        "Type": "NexusPilot_Tasks_Service_src.Controllers.CreationController\u002BAddAssigneeObject",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.CreationController",
     "Method": "CreateTask",
     "RelativePath": "api/Creation/newTask",
     "HttpMethod": "POST",
@@ -41,6 +57,22 @@
     "Parameters": [
       {
         "Name": "projectUUID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.RetrievalController",
+    "Method": "GetTaskAssignees",
+    "RelativePath": "api/Retrieval/taskAssignees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "taskUUID",
         "Type": "System.String",
         "IsRequired": true
       }

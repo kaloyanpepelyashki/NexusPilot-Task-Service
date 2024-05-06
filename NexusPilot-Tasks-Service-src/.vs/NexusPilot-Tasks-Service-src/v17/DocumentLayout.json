@@ -3,11 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kaloyan\\AppData\\Local\\SourceServer\\57d6a6a41e67b1270b1f24ba6fdc38ac659641b7df9673eae4ab0a0efc2ad649\\NexusPilot-Tasks-Service-src\\Services\\TaskService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\controllers\\retrievalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:controllers\\retrievalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\controllers\\deletioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,20 +15,28 @@
       "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:controllers\\creationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\services\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:services\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:services\\taskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\models\\assignee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:models\\assignee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\dao\\supabaseclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:dao\\supabaseclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:models\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\controllers\\retrievalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:controllers\\retrievalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\services\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:services\\interfaces\\itaskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\dao\\supabaseclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:dao\\supabaseclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|c:\\users\\kaloyan\\desktop\\my projects and works\\projects\\pwa-nexuspilot-task-manager\\nexuspilot-task-service\\nexuspilot-tasks-service-src\\models\\exceptionmodels\\alreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20895F7C-285A-41CE-9BBE-50BF1356CB61}|NexusPilot-Tasks-Service-src.csproj|solutionrelative:models\\exceptionmodels\\alreadyexistsexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,24 +46,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaskService.cs",
-              "DocumentMoniker": "C:\\Users\\Kaloyan\\AppData\\Local\\SourceServer\\57d6a6a41e67b1270b1f24ba6fdc38ac659641b7df9673eae4ab0a0efc2ad649\\NexusPilot-Tasks-Service-src\\Services\\TaskService.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\57d6a6a41e67b1270b1f24ba6fdc38ac659641b7df9673eae4ab0a0efc2ad649\\NexusPilot-Tasks-Service-src\\Services\\TaskService.cs",
-              "ToolTip": "C:\\Users\\Kaloyan\\AppData\\Local\\SourceServer\\57d6a6a41e67b1270b1f24ba6fdc38ac659641b7df9673eae4ab0a0efc2ad649\\NexusPilot-Tasks-Service-src\\Services\\TaskService.cs [Read Only]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\57d6a6a41e67b1270b1f24ba6fdc38ac659641b7df9673eae4ab0a0efc2ad649\\NexusPilot-Tasks-Service-src\\Services\\TaskService.cs [Read Only]",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAuwFoAAAAAAAAA",
+              "DocumentIndex": 8,
+              "Title": "AlreadyExistsException.cs",
+              "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Models\\ExceptionModels\\AlreadyExistsException.cs",
+              "RelativeDocumentMoniker": "Models\\ExceptionModels\\AlreadyExistsException.cs",
+              "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Models\\ExceptionModels\\AlreadyExistsException.cs",
+              "RelativeToolTip": "Models\\ExceptionModels\\AlreadyExistsException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T18:41:38.818Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2024-05-06T08:25:48.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Assignee.cs",
+              "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Models\\Assignee.cs",
+              "RelativeDocumentMoniker": "Models\\Assignee.cs",
+              "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Models\\Assignee.cs",
+              "RelativeToolTip": "Models\\Assignee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T07:14:14.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DeletionController.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Controllers\\DeletionController.cs",
               "RelativeDocumentMoniker": "Controllers\\DeletionController.cs",
@@ -71,72 +89,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "RetrievalController.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Controllers\\RetrievalController.cs",
               "RelativeDocumentMoniker": "Controllers\\RetrievalController.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Controllers\\RetrievalController.cs",
               "RelativeToolTip": "Controllers\\RetrievalController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAABcAAAAAAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T08:45:17.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TaskItem.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Models\\TaskItem.cs",
               "RelativeDocumentMoniker": "Models\\TaskItem.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Models\\TaskItem.cs",
               "RelativeToolTip": "Models\\TaskItem.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABwAAAAiAAAA",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAABwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T08:13:15.512Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CreationController.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Controllers\\CreationController.cs",
               "RelativeDocumentMoniker": "Controllers\\CreationController.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Controllers\\CreationController.cs",
               "RelativeToolTip": "Controllers\\CreationController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAAABwAAAARAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAACoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T08:02:01.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TaskService.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Services\\TaskService.cs",
               "RelativeDocumentMoniker": "Services\\TaskService.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Services\\TaskService.cs",
               "RelativeToolTip": "Services\\TaskService.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAAAGIAAAAQAAAA",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAAJsAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T07:47:30.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "ITaskService.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Services\\Interfaces\\ITaskService.cs",
               "RelativeDocumentMoniker": "Services\\Interfaces\\ITaskService.cs",
               "ToolTip": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\Services\\Interfaces\\ITaskService.cs",
               "RelativeToolTip": "Services\\Interfaces\\ITaskService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T07:12:23.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "SupabaseClient.cs",
               "DocumentMoniker": "C:\\Users\\Kaloyan\\Desktop\\My Projects and works\\Projects\\PWA-NexusPilot-Task-Manager\\NexusPilot-Task-Service\\NexusPilot-Tasks-Service-src\\DAO\\SupabaseClient.cs",
               "RelativeDocumentMoniker": "DAO\\SupabaseClient.cs",

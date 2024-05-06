@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NexusPilot_Tasks_Service_src.Models;
+using NexusPilot_Tasks_Service_src.Models.ExceptionModels;
 using NexusPilot_Tasks_Service_src.Services;
 using System.ComponentModel.DataAnnotations;
 
@@ -38,6 +39,32 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             }
         }
 
+       
+        [HttpPost("addAssignee")]
+        public async Task<ActionResult> AddAssigneesToTask([FromBody] AddAssigneeObject addAssigneeObject)
+        {
+            try
+            {
+                var result = await _taskService.AddAssigneeToTask(addAssigneeObject.TaskUUID, addAssigneeObject.UserUUID, addAssigneeObject.UserNickName);
+
+                if(result)
+                {
+                    return Ok("Assignee added to task");
+                }
+
+                return StatusCode(500, "Uncertain Database transaction result");
+
+            } catch(AlreadyExistsException e)
+            {
+                return StatusCode(400, "User already assigned to a task");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"Error adding assignee: {e}");
+                return StatusCode(500, "Error adding assignee: Internal Server Error");
+            }
+        }
+
 
         public class TaskCreationObject 
         {
@@ -59,6 +86,16 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             [Required]
             public string Priority { get; set; }
 
+        }
+
+        public class AddAssigneeObject
+        {
+            [Required]
+            public string TaskUUID { get; set; }
+            [Required]
+            public string UserUUID { get; set; }
+            [Required]
+            public string UserNickName { get; set; }
         }
 
     }
