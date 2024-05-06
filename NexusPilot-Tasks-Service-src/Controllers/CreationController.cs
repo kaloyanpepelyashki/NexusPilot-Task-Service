@@ -24,7 +24,7 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             try
             {
 
-                var result = await _taskService.CreateNewTask(taskObject.TaskOwnerUUID, taskObject.ProjectUUID, taskObject.Summary, taskObject.Description, taskObject.ImageUrl, taskObject.Priority);
+                var result = await _taskService.CreateNewTask(taskObject.TaskOwnerUUID, taskObject.ProjectUUID, taskObject.Summary, taskObject.Description, taskObject.ImageUrl, taskObject.Priority, taskObject.EndDate, taskObject.StartDate);
 
                 if(result)
                 {
@@ -82,6 +82,12 @@ namespace NexusPilot_Tasks_Service_src.Controllers
 
             [Required]
             public string ImageUrl { get; set; }
+
+            [Required]
+            public DateOnly StartDate { get; set; }
+
+            [Required]
+            public DateOnly EndDate { get; set; }
 
             [Required]
             public string Priority { get; set; }

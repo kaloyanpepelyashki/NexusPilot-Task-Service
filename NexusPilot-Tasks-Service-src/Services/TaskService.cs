@@ -28,14 +28,15 @@ namespace NexusPilot_Tasks_Service_src.Services
             return _instance;
         }
 
-        public async Task<bool> CreateNewTask(string taskOwnerUUID, string projectUUID, string summary, string description, string imageUrl, string priority)
+        /** Inserts a new record in the tasks table in the database */
+        public async Task<bool> CreateNewTask(string taskOwnerUUID, string projectUUID, string summary, string description, string imageUrl, string priority, DateOnly startDate, DateOnly endDate)
         {
             try
             {
                 var taskOwnerGuid = new  Guid(taskOwnerUUID);
                 var projectGuid = new Guid(projectUUID);
 
-                TaskItem newTask = new TaskItem { Summary = summary, Description = description, ImageUrl = imageUrl, ProjectId = projectGuid, TaskOwnerId = taskOwnerGuid, Pirority = priority };
+                TaskItem newTask = new TaskItem { Summary = summary, Description = description, ImageUrl = imageUrl, ProjectId = projectGuid, TaskOwnerId = taskOwnerGuid, Pirority = priority, StartDate = startDate, EndDate = endDate };
 
                 var result = await supabase.From<TaskItem>().Insert(newTask);
 
@@ -177,6 +178,39 @@ namespace NexusPilot_Tasks_Service_src.Services
 
                 return (false, new List<Assignee>());
 
+            } catch(Exception e)
+            {
+                throw;
+            }
+        }
+
+        public async Task<bool> MarkTaskAsDone(string taskId)
+        {
+            try
+            {
+
+                var result = await supabase.From<TaskItem>().Where(task => task.Id == taskId).Set(item => item.Done, true).Update();
+
+                Console.WriteLine($"Result: {result}");
+
+                if (result != null)
+                {
+                    if (result.ResponseMessage.IsSuccessStatusCode)
+                    {
+                        if (result.Models.Count > 0)
+                        {
+                            return true;
+                        }
+
+                        throw new NoRecordFoundException("Task was not found");
+
+                    }
+
+                    return false;
+                }
+
+                return false;
+               
             } catch(Exception e)
             {
                 throw;

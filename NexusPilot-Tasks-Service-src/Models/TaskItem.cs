@@ -22,6 +22,15 @@ namespace NexusPilot_Tasks_Service_src.Models
         [Column("priority")]
         public string Pirority { get; set; }
 
+        [Column("startdate")]
+        public DateOnly StartDate { get; set; }
+
+        [Column("enddate")]
+        public DateOnly EndDate { get; set; }
+
+        [Column("done")]
+        public bool Done { get; set; }
+
         [Column("project_id")]
         public Guid ProjectId { get; set; }
 
