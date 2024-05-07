@@ -14,7 +14,7 @@ namespace NexusPilot_Tasks_Service_src.Services
 
         private TaskService()
         {
-            supabaseClient = new SupabaseClient();
+            supabaseClient = SupabaseClient.GetInstance();
             supabase = supabaseClient.SupabaseAccessor;
         }
 
