@@ -45,8 +45,7 @@
               "RelativeToolTip": "Services\\TaskService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T13:38:47.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T13:38:47.238Z"
             },
             {
               "$type": "Document",
@@ -58,8 +57,7 @@
               "RelativeToolTip": "..\\NexusPilot-TaskService.Test\\SupabaseClientTest.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACAAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T13:25:50.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T13:25:50.908Z"
             }
           ]
         }
