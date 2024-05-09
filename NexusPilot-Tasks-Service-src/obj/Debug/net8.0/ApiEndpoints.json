@@ -34,15 +34,15 @@
   {
     "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.DeletionController",
     "Method": "DeleteTaskById",
-    "RelativePath": "api/Deletion/taskByTaskId",
+    "RelativePath": "api/Deletion/taskByTaskId/{taskUUID}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "taskId",
+        "Name": "taskUUID",
         "Type": "System.String",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -66,8 +66,8 @@
   {
     "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.RetrievalController",
     "Method": "GetAllProjectTasks",
-    "RelativePath": "api/Retrieval/allProjectTasks",
-    "HttpMethod": "POST",
+    "RelativePath": "api/Retrieval/allProjectTasks/{projectUUID}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -82,8 +82,8 @@
   {
     "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.RetrievalController",
     "Method": "GetTaskAssignees",
-    "RelativePath": "api/Retrieval/taskAssignees",
-    "HttpMethod": "POST",
+    "RelativePath": "api/Retrieval/taskAssignees/{taskUUID}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [

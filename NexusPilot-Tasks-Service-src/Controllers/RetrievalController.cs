@@ -15,8 +15,8 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             _taskService = TaskService.GetInstance();
         }
 
-        [HttpPost("allProjectTasks")]
-        public async Task<ActionResult> GetAllProjectTasks([FromBody] string projectUUID)
+        [HttpGet("allProjectTasks/{projectUUID}")]
+        public async Task<ActionResult> GetAllProjectTasks(string projectUUID)
         {
             try
             {
@@ -41,12 +41,39 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             }
         }
 
-        [HttpPost("taskAssignees")]
-        public async Task<ActionResult> GetTaskAssignees([FromBody] string taskUUID)
+        [HttpGet("allActiveTasksFroProject/{projectUUID}")]
+        public async Task<ActionResult> GetActiveTasksForProject(string projectUUID)
+        {
+            try
+            {
+                var result = await _taskService.GetActiveTasksForProject(projectUUID);
+
+                if(result.isSuccess)
+                {
+                    if (result.taskList.Count > 0)
+                    {
+                        return Ok(result.taskList);
+                    }
+
+                    return StatusCode(404, "No resources were found");
+                }
+
+                return StatusCode(500, "Error retrieving tasks");
+
+            } catch(Exception e)
+            {
+                Console.WriteLine($"Error retrieving tasks: {e}");
+                return StatusCode(500, "Internal Server Error");
+            }
+        }
+
+        [HttpGet("taskAssignees/{taskUUID}")]
+        public async Task<ActionResult> GetTaskAssignees(string taskUUID)
         {
             try
             {
                 var result = await _taskService.GetTaskAssignees(taskUUID);
+
                 if(result.isSuccess)
                 {
                     if (result.assigneesList.Count > 0)

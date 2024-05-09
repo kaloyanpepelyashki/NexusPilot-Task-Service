@@ -82,12 +82,12 @@ namespace NexusPilot_Tasks_Service_src.Services
         }
 
         /** Inserts a new record in the junction table between tasks and user_accounts "taskassignees" */
-        public async Task<bool> AddAssigneeToTask(string taskId, string assigneeId, string assigneeNickName)
+        public async Task<bool> AddAssigneeToTask(string taskUUID, string assigneeUUID, string assigneeNickName)
         {
             try
             {
-                var taskGuid = new Guid(taskId);
-                var assigneeGuid = new Guid(assigneeId);
+                var taskGuid = new Guid(taskUUID);
+                var assigneeGuid = new Guid(assigneeUUID);
 
                 var operationIsValid = await CheckTaskToAssigneeIsValid(taskGuid, assigneeGuid);
 
@@ -153,12 +153,45 @@ namespace NexusPilot_Tasks_Service_src.Services
                 throw;
             }
         }
-
-        public async Task<(bool isSuccess, List<Assignee>? assigneesList)> GetTaskAssignees(string taskId)
+        public async Task<(bool isSuccess, List<TaskItem> taskList)> GetActiveTasksForProject(string projectUUID)
         {
             try
             {
-                var taskGuid = new Guid(taskId);
+                var projectGuid = new Guid(projectUUID);
+
+                var result = await supabase.From<TaskItem>().Where(task => task.ProjectId == projectGuid && task.Done == false).Get();
+
+                if(result.ResponseMessage.IsSuccessStatusCode)
+                {
+                    if (result.Models.Count > 0)
+                    {
+                        List <TaskItem> returnedTasks = new List<TaskItem>();
+
+                        result.Models.ForEach(task =>
+                        {
+                            returnedTasks.Add(new TaskItem { Summary = task.Summary, Description = task.Description, ImageUrl = task.ImageUrl, Pirority = task.Pirority, ProjectId = projectGuid, TaskOwnerId = task.TaskOwnerId });
+                        });
+
+                        return (true, returnedTasks);
+                    }
+
+                    return (true, new List<TaskItem>());
+                }
+
+                return (false, new List<TaskItem>());
+
+            } catch(Exception e)
+            {
+                throw;
+            }
+        }
+
+        /*This method queries the taskassignees table and returns all records, associated with the taskId passed as parameter */
+        public async Task<(bool isSuccess, List<Assignee>? assigneesList)> GetTaskAssignees(string taskUUID)
+        {
+            try
+            {
+                var taskGuid = new Guid(taskUUID);
 
                 var result = await supabase.From<Assignee>().Where(item => item.TaskId == taskGuid).Get();
 
@@ -184,12 +217,12 @@ namespace NexusPilot_Tasks_Service_src.Services
             }
         }
 
-        public async Task<bool> MarkTaskAsDone(string taskId)
+        public async Task<bool> MarkTaskAsDone(string taskUUID)
         {
             try
             {
 
-                var result = await supabase.From<TaskItem>().Where(task => task.Id == taskId).Set(item => item.Done, true).Update();
+                var result = await supabase.From<TaskItem>().Where(task => task.Id == taskUUID).Set(item => item.Done, true).Update();
 
                 Console.WriteLine($"Result: {result}");
 
@@ -218,15 +251,14 @@ namespace NexusPilot_Tasks_Service_src.Services
         }
 
         //To do: Implement some validation of completion and error handling
-        public async Task<bool> DeleteTask(string taskId)
+        public async Task<bool> DeleteTask(string taskUUID)
         {
             try
             {
                 
 
-                var result = supabase.From<TaskItem>().Where(task => task.Id == taskId).Delete();
+                await supabase.From<TaskItem>().Where(task => task.Id == taskUUID).Delete();
 
-                Console.WriteLine($"Result: {result}");
                 return true;
 
             } catch(Exception e)

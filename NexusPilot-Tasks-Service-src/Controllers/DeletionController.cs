@@ -15,14 +15,15 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             _taskService = TaskService.GetInstance();
         }
 
-        [HttpDelete("taskByTaskId")]
-        public ActionResult DeleteTaskById(string taskId)
+        [HttpDelete("taskByTaskId/{taskUUID}")]
+        public ActionResult DeleteTaskById(string taskUUID)
         {
             try
             {
-                var result = _taskService.DeleteTask(taskId);
+                var result = _taskService.DeleteTask(taskUUID);
 
                 return Ok();
+
             } catch(Exception e)
             {
                 return StatusCode(500, "Error deleting task: Internal Server error");
