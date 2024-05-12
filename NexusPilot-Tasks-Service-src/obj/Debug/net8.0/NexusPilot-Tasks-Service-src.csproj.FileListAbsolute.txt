@@ -125,3 +125,7 @@ C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Mana
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-Tasks-Service-src\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

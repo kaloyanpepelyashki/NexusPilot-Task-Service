@@ -5,6 +5,15 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//Setting up CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAnyOrigin", 
+        builder => builder.AllowAnyOrigin()
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        );
+});
 IConfiguration _configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json", optional: true, reloadOnChange: true).AddEnvironmentVariables().Build();
 
 var JWTIssuer = _configuration["JWTConfig:Issuer"];
@@ -17,7 +26,6 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers().AddNewtonsoftJson();
 
-var app = builder.Build();
 
 builder.Services.AddAuthentication(x =>
 {
@@ -38,12 +46,18 @@ x.TokenValidationParameters = new TokenValidationParameters{
 };
 });
 
+builder.Services.AddAuthorization();
+
+var app = builder.Build();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//Adding CORS policy to the app
+app.UseCors("AllowAnyOrigin");
 
 app.UseHttpsRedirection();
 

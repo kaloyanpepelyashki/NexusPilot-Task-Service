@@ -65,6 +65,22 @@
   },
   {
     "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.RetrievalController",
+    "Method": "GetActiveTasksForProject",
+    "RelativePath": "api/Retrieval/allActiveTasksFroProject/{projectUUID}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectUUID",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NexusPilot_Tasks_Service_src.Controllers.RetrievalController",
     "Method": "GetAllProjectTasks",
     "RelativePath": "api/Retrieval/allProjectTasks/{projectUUID}",
     "HttpMethod": "GET",
