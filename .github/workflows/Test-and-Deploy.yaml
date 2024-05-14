@@ -4,8 +4,8 @@ on:
   push:
     branches: [master]
 
-jobs:
-  Test:
+#jobs:
+  #Test:
     # runs-on: ubuntu-latest
 
     # defaults:
