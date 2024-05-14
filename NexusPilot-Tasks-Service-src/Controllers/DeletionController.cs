@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NexusPilot_Tasks_Service_src.Services;
 
@@ -15,6 +16,8 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             _taskService = TaskService.GetInstance();
         }
 
+        /*This method deletes a task based on taskUUID, the method expects to receive string taskUUID */
+        [Authorize]
         [HttpDelete("taskByTaskId/{taskUUID}")]
         public ActionResult DeleteTaskById(string taskUUID)
         {

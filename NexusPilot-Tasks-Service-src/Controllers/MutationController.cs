@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NexusPilot_Tasks_Service_src.Models.ExceptionModels;
 using NexusPilot_Tasks_Service_src.Services;
@@ -16,7 +17,8 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             _taskService = TaskService.GetInstance();
         }
 
-
+        /*This method marks a task as done based on taskUUID, the method expects to receive string taskUUID */
+        [Authorize]
         [HttpPatch("markTaskDone")]
         public async Task<ActionResult> MarkTaskDone([FromBody] string taskId)
         {

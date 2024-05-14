@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NexusPilot_Tasks_Service_src.Models;
 using NexusPilot_Tasks_Service_src.Models.ExceptionModels;
@@ -18,6 +19,7 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             _taskService = TaskService.GetInstance();
         }
 
+        [Authorize]
         [HttpPost("newTask")]
         public async Task<ActionResult> CreateTask([FromBody] TaskCreationObject taskObject)
         {
@@ -39,7 +41,7 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             }
         }
 
-       
+        [Authorize]
         [HttpPost("addAssignee")]
         public async Task<ActionResult> AddAssigneesToTask([FromBody] AddAssigneeObject addAssigneeObject)
         {

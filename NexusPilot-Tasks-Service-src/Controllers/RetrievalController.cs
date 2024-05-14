@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NexusPilot_Tasks_Service_src.Services;
 
@@ -15,6 +16,8 @@ namespace NexusPilot_Tasks_Service_src.Controllers
             _taskService = TaskService.GetInstance();
         }
 
+        /*This method returns all tasks for a project, based on project id */
+        [Authorize]
         [HttpGet("allProjectTasks/{projectUUID}")]
         public async Task<ActionResult> GetAllProjectTasks(string projectUUID)
         {
@@ -40,7 +43,8 @@ namespace NexusPilot_Tasks_Service_src.Controllers
                 return StatusCode(500, "Internal Server Error");
             }
         }
-
+        /*This method returns all ACTIVE tasks for a project based on projectUUID */
+        [Authorize]
         [HttpGet("allActiveTasksFroProject/{projectUUID}")]
         public async Task<ActionResult> GetActiveTasksForProject(string projectUUID)
         {
@@ -66,7 +70,8 @@ namespace NexusPilot_Tasks_Service_src.Controllers
                 return StatusCode(500, "Internal Server Error");
             }
         }
-
+        /*This method returns all assignees for a task, based on taskUUID */
+        [Authorize]
         [HttpGet("taskAssignees/{taskUUID}")]
         public async Task<ActionResult> GetTaskAssignees(string taskUUID)
         {
