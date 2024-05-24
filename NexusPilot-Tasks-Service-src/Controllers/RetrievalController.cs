@@ -17,7 +17,7 @@ namespace NexusPilot_Tasks_Service_src.Controllers
         }
 
         /*This method returns all tasks for a project, based on project id */
-        [Authorize]
+        
         [HttpGet("allProjectTasks/{projectUUID}")]
         public async Task<ActionResult> GetAllProjectTasks(string projectUUID)
         {

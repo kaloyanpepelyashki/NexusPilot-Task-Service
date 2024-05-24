@@ -133,7 +133,7 @@ namespace NexusPilot_Tasks_Service_src.Services
 
                     result.Models.ForEach(task =>
                     {
-                        returnedTasks.Add(new TaskItem { Id = task.Id, Summary = task.Summary, Description = task.Description, ImageUrl = task.ImageUrl, Pirority = task.Pirority, ProjectId = projectGuid, TaskOwnerId = task.TaskOwnerId });
+                        returnedTasks.Add(new TaskItem { Id = task.Id, Summary = task.Summary, Description = task.Description, ImageUrl = task.ImageUrl, Pirority = task.Pirority, EndDate = task.EndDate, StartDate = task.StartDate, Done = task.Done, ProjectId = projectGuid, TaskOwnerId = task.TaskOwnerId });
                     });
 
                     if(returnedTasks.Count > 0)
@@ -169,7 +169,7 @@ namespace NexusPilot_Tasks_Service_src.Services
 
                         result.Models.ForEach(task =>
                         {
-                            returnedTasks.Add(new TaskItem { Summary = task.Summary, Description = task.Description, ImageUrl = task.ImageUrl, Pirority = task.Pirority, ProjectId = projectGuid, TaskOwnerId = task.TaskOwnerId });
+                            returnedTasks.Add(new TaskItem { Summary = task.Summary, Description = task.Description, ImageUrl = task.ImageUrl, Pirority = task.Pirority, ProjectId = projectGuid, EndDate = task.EndDate, StartDate = task.StartDate, Done = task.Done, TaskOwnerId = task.TaskOwnerId });
                         });
 
                         return (true, returnedTasks);
