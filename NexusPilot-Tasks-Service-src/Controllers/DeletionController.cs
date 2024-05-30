@@ -5,15 +5,15 @@ using NexusPilot_Tasks_Service_src.Services;
 
 namespace NexusPilot_Tasks_Service_src.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class DeletionController : ControllerBase
     {
         private readonly TaskService _taskService;
 
-        public DeletionController()
+        public DeletionController(TaskService taskService)
         {
-            _taskService = TaskService.GetInstance();
+            _taskService = taskService;
         }
 
         /*This method deletes a task based on taskUUID, the method expects to receive string taskUUID */

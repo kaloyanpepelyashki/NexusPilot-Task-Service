@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using NexusPilot_Tasks_Service_src.DAO;
+using NexusPilot_Tasks_Service_src.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,10 +23,13 @@ var JWTAudience = _configuration["JWTConfig:Audience"];
 var JWTSecretKey = _configuration["JWTConfig:SecretKey"];
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers().AddNewtonsoftJson();
+//Registers DAO as a singleton and prepares for DI
+builder.Services.AddSingleton<SupabaseClient>();
+//Registers the service as a singleton and prepares for DI
+builder.Services.AddScoped<TaskService>();
 
 
 builder.Services.AddAuthentication(x =>

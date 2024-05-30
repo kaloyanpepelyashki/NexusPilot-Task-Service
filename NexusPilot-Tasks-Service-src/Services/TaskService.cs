@@ -6,29 +6,23 @@ using Supabase;
 
 namespace NexusPilot_Tasks_Service_src.Services
 {
+    //Handles all interactions with the Task Entity
     public class TaskService: ITaskService
     {
         private static TaskService _instance;
-        protected SupabaseClient supabaseClient;
+        protected SupabaseClient _supabaseClient;
         protected Client supabase;
 
-        private TaskService()
+        //Supabase Client DAO is dependency injected into the service
+        public TaskService(SupabaseClient supabaseClient)
         {
-            supabaseClient = SupabaseClient.GetInstance();
-            supabase = supabaseClient.SupabaseAccessor;
+            _supabaseClient = supabaseClient;
+            supabase = _supabaseClient.SupabaseAccessor;
         }
 
-        public static TaskService GetInstance()
-        {
-            if(_instance == null)
-            {
-                _instance = new TaskService();
-            }
 
-            return _instance;
-        }
-
-        /** Inserts a new record in the tasks table in the database */
+        /** This method is in charge of creating a new task
+         * The method inserts a new record in the tasks table in the database */
         public async Task<bool> CreateNewTask(string taskOwnerUUID, string projectUUID, string summary, string description, string imageUrl, string priority, DateOnly startDate, DateOnly endDate)
         {
             try
@@ -81,7 +75,8 @@ namespace NexusPilot_Tasks_Service_src.Services
             }
         }
 
-        /** Inserts a new record in the junction table between tasks and user_accounts "taskassignees" */
+        /** This method is in charge of adding an assignee to a task
+         * The method inserts a new record in the junction table between tasks and user_accounts "taskassignees" */
         public async Task<bool> AddAssigneeToTask(string taskUUID, string assigneeUUID, string assigneeNickName)
         {
             try
@@ -118,7 +113,8 @@ namespace NexusPilot_Tasks_Service_src.Services
             }
 
         }
-
+        /** This method is in charge of fetching all tasks belonging to a project
+         The method queries the database and fetches all records that satisfy the criteria */
         public async Task<(bool isSuccess, List<TaskItem> tasksList)> GetAllTasksForProject(string projectUUID)
         {
             try
@@ -153,6 +149,9 @@ namespace NexusPilot_Tasks_Service_src.Services
                 throw;
             }
         }
+
+        /** This method is in charge of fetching all ACTIVE tasks belonging to a project
+         The method queries the database and fetches all records that satisfy the criteria */
         public async Task<(bool isSuccess, List<TaskItem> taskList)> GetActiveTasksForProject(string projectUUID)
         {
             try
@@ -216,7 +215,8 @@ namespace NexusPilot_Tasks_Service_src.Services
                 throw;
             }
         }
-
+        /** This method is in charge of changing the state of a task to "done"
+        The method queries the database and modifies the record that matches the criteria done field to true */
         public async Task<bool> MarkTaskAsDone(string taskUUID)
         {
             try
@@ -250,7 +250,8 @@ namespace NexusPilot_Tasks_Service_src.Services
             }
         }
 
-        //To do: Implement some validation of completion and error handling
+        /** This method is in charge of deleting a task record
+         The method queries the database and deletes the record that matches the criteria */
         public async Task<bool> DeleteTask(string taskUUID)
         {
             try

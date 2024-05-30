@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NexusPilot-Tasks-Service-src")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f65776b30f00b3a3dd6c21d4904c60ecd3d3d454")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06da5d1e4496372a08ce50597438eafa65f84589")]
 [assembly: System.Reflection.AssemblyProductAttribute("NexusPilot-Tasks-Service-src")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NexusPilot-Tasks-Service-src")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

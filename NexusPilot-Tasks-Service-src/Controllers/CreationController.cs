@@ -8,15 +8,15 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NexusPilot_Tasks_Service_src.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class CreationController : ControllerBase
     {
         private readonly TaskService _taskService;
 
-        public CreationController()
+        public CreationController(TaskService taskService)
         {
-            _taskService = TaskService.GetInstance();
+            _taskService = taskService;
         }
 
         [Authorize]

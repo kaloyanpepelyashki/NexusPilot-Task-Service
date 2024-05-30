@@ -132,3 +132,9 @@ C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Mana
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\obj\Debug\net8.0\NexusPilot-TaskService.Test.pdb
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\obj\Debug\net8.0\NexusPilot-TaskService.Test.genruntimeconfig.cache
 C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\obj\Debug\net8.0\ref\NexusPilot-TaskService.Test.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Kaloyan\Desktop\My Projects and works\Projects\PWA-NexusPilot-Task-Manager\NexusPilot-Task-Service\NexusPilot-TaskService.Test\bin\Debug\net8.0\Moq.dll

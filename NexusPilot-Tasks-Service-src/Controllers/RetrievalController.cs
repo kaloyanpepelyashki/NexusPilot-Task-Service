@@ -5,19 +5,19 @@ using NexusPilot_Tasks_Service_src.Services;
 
 namespace NexusPilot_Tasks_Service_src.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class RetrievalController : ControllerBase
     {
         private readonly TaskService _taskService;
 
-        public RetrievalController()
+        public RetrievalController(TaskService taskService)
         {
-            _taskService = TaskService.GetInstance();
+            _taskService = taskService;
         }
 
         /*This method returns all tasks for a project, based on project id */
-        
+        [Authorize]
         [HttpGet("allProjectTasks/{projectUUID}")]
         public async Task<ActionResult> GetAllProjectTasks(string projectUUID)
         {

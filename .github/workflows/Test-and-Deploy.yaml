@@ -5,25 +5,26 @@ on:
     branches: [master]
 
 jobs:
-  #Test:
-    # runs-on: ubuntu-latest
+  Test:
+    runs-on: ubuntu-latest
 
-    # defaults:
-    #   run:
-    #     working-directory: NexusPilot-Tasks-Service-src
+    defaults:
+      run:
+        working-directory: NexusPilot-Tasks-Service-src
 
-    # steps:
-    #   - uses: actions/checkout@v4
-    #   - name: Setup .Net
-    #     uses: actions/setup-dotnet@v4
-    #     with:
-    #       dotnet-version: "8.x"
-    #   - name: Install packages
-    #     run: dotnet restore
-    #   - name: Build
-    #     run: dotnet build --no-restore
-    #   - name: Test
-    #     run: dotnet test --no-build --verbosity normal
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup .Net
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.x"
+      - name: Install packages
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --no-restore
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+
   build_and_deploy:
     runs-on: ubuntu-latest
 
